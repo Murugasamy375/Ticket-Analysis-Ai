@@ -198,6 +198,7 @@ ticket-ai-analytics/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+main.py
 ```
 
 ## 6. Technology Stack
@@ -255,7 +256,7 @@ Do not commit `.env`.
 Run this from the project root:
 
 ```bash
-uvicorn app.main:app
+uvicorn main:app
 ```
 
 You do not need to start Streamlit separately. FastAPI starts the Streamlit UI automatically.
@@ -897,7 +898,7 @@ Each CSV row is already a complete ticket document.
 
 For the assessment walkthrough:
 
-1. Run `uvicorn app.main:app`
+1. Run `uvicorn main:app`
 2. Open the **final UI viewing URL**: `http://127.0.0.1:8501`
 3. Click **Health Check**
 4. Explain the KPI cards
